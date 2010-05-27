@@ -1,0 +1,6 @@
+This folder contains a version of Lightning from the Lightning git repository. The latest release of Lightning (1.2) doesn't support x86_64, but this version does.
+
+(PLT scheme has their own hacked version of lightning that supports x86_64, but I couldn't get it to work, and an official version is probably better anyway.)
+
+To build binds.c, run
+cc -I./include -shared binds.c -o binds.so
